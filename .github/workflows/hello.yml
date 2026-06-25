@@ -9,3 +9,21 @@
 
 #ACTIONS
 #Actions should be inside steps
+
+# ON tells when the workflow shoud run
+#------------------------------------------#
+
+# No intendation is required for naming the workflow
+name: Sumanth
+# On tells when the workflow should run (Give indentation by using tab)
+on:
+  workflow_dispatch: 
+jobs:
+  # 1st Job (give intentation)
+  say-hello:
+  # Sets a Ephemeral (short living things) container with ubuntu running
+    runs-on: ubuntu-latest
+  # That Ephemeral container will have steps to create, hence name those steps and use run: run as command
+    steps:
+      - name: say hello to everyone
+        run: echo "Hello Dosto"
