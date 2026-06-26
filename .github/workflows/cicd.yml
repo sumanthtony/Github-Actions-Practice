@@ -1,3 +1,4 @@
+# Goal: Build the devboard image of Frontend and push to Docker hub
 name: CI/CD
 on: 
   workflow_dispatch:
